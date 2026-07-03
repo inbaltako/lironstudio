@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Liron Tako | Multidisciplinary Artist &amp; Maker</title>
+    <meta name="description" content="Explore the portfolio of Liron Tako, a multidisciplinary artist and maker creating crochet textile art, sculptural candles, 3D printed designs, and custom gift baskets." />
+    
+    <!-- Google Fonts: Caveat for signature style, Source Serif 4 & Frank Ruhl Libre for headlines, Hanken Grotesk & Assistant for body -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300&amp;family=Frank+Ruhl+Libre:wght@300;400;500;700&amp;family=Hanken+Grotesk:wght@400;500;600&amp;family=Assistant:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    
+    <!-- Tailwind CSS with Forms and Container Queries -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#ffdbd0",
+                        "on-primary-fixed-variant": "#474746",
+                        "on-tertiary": "#ffffff",
+                        "off-white": "#F9F8F6",
+                        "tertiary": "#2a0902",
+                        "outline": "#747878",
+                        "on-tertiary-fixed-variant": "#693a2c",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#faf9f7",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "tertiary-fixed-dim": "#fab7a3",
+                        "surface-dim": "#dadad8",
+                        "on-tertiary-fixed": "#341005",
+                        "error-container": "#ffdad6",
+                        "surface-tint": "#5f5e5e",
+                        "on-tertiary-container": "#bd816f",
+                        "surface-bright": "#faf9f7",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#1a1c1b",
+                        "on-secondary-container": "#656555",
+                        "surface-variant": "#e3e2e0",
+                        "primary-container": "#282828",
+                        "on-surface": "#1a1c1b",
+                        "surface-container-high": "#e9e8e6",
+                        "outline-variant": "#c4c7c7",
+                        "ink": "#1A1A1A",
+                        "on-primary-fixed": "#1b1c1c",
+                        "secondary-container": "#e5e4cf",
+                        "surface-container-highest": "#e3e2e0",
+                        "primary-fixed": "#e4e2e1",
+                        "warm-stone": "#E5E1DA",
+                        "inverse-on-surface": "#f1f1ef",
+                        "on-secondary-fixed-variant": "#474839",
+                        "inverse-surface": "#2f3130",
+                        "inverse-primary": "#c8c6c5",
+                        "on-surface-variant": "#444748",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "soft-sage": "#D1D3C4",
+                        "primary": "#131414",
+                        "tertiary-container": "#441d10",
+                        "secondary": "#5f5f4f",
+                        "surface-container-low": "#f4f3f1",
+                        "surface-container": "#efeeec",
+                        "background": "#faf9f7",
+                        "on-primary-container": "#908f8e",
+                        "muted-clay": "#C9A799",
+                        "on-secondary-fixed": "#1b1c10",
+                        "secondary-fixed-dim": "#c8c8b4",
+                        "secondary-fixed": "#e5e4cf"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-gap": "120px",
+                        "gallery-gutter": "24px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "60px",
+                        "base": "8px",
+                        "container-max": "1440px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Source Serif 4", "Frank Ruhl Libre", "serif"],
+                        "headline-md": ["Source Serif 4", "Frank Ruhl Libre", "serif"],
+                        "headline-sm": ["Source Serif 4", "Frank Ruhl Libre", "serif"],
+                        "display-lg": ["Source Serif 4", "Frank Ruhl Libre", "serif"],
+                        "button": ["Hanken Grotesk", "Assistant", "sans-serif"],
+                        "body-md": ["Hanken Grotesk", "Assistant", "sans-serif"],
+                        "body-lg": ["Hanken Grotesk", "Assistant", "sans-serif"],
+                        "label-caps": ["Hanken Grotesk", "Assistant", "sans-serif"],
+                        "handwritten": ["Caveat"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "300"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "300"}],
+                        "button": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .canvas-bg {
+            background-color: #faf9f7;
+            background-image: radial-gradient(#e5e1da 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
+        .fade-in-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
+        }
+        .fade-in-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .nav-scrolled {
+            background-color: rgba(250, 249, 247, 0.95) !important;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+        }
+        .active-scale:active {
+            transform: scale(0.97);
+        }
+        .hero-parallax {
+            will-change: transform;
+        }
+        .ink-underline::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: #1A1A1A;
+            transition: width 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .ink-underline:hover::after {
+            width: 100%;
+        }
+        /* Mobile Overlay Entrance animations */
+        .reveal-animation {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        #mobile-overlay.active .reveal-animation {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden selection:bg-muted-clay selection:text-white antialiased">
+
+<!-- TopNavBar -->
+<nav class="bg-surface/0 backdrop-blur-md text-primary fixed top-0 w-full z-40 border-b border-outline-variant/0 transition-all duration-500 flat no-shadows" id="top-nav">
+    <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-base max-w-container-max mx-auto h-20">
+        <!-- Logo -->
+        <a href="#" class="font-handwritten text-headline-md tracking-tighter text-primary" data-translate="heroTitle">Liron Tako</a>
+        
+        <!-- Desktop Nav Links -->
+        <div class="hidden md:flex items-center gap-10">
+            <a class="font-label-caps text-label-caps text-primary font-bold border-b-2 border-primary pb-1 transition-all hover:text-muted-clay active-scale" href="#showcase" data-translate="navShowcase">Showcase</a>
+            <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-all active-scale" href="#about" data-translate="navAbout">About</a>
+            <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-all active-scale" href="#contact" data-translate="navContact">Contact</a>
+        </div>
+        
+        <!-- Language Switcher & Hamburger -->
+        <div class="flex items-center gap-6">
+            <button class="font-label-caps text-label-caps hover:text-primary transition-all active-scale lang-toggle-btn">עברית</button>
+            <button class="md:hidden flex items-center active-scale p-2" id="open-nav" aria-label="Open navigation menu">
+                <span class="material-symbols-outlined text-[32px]">menu</span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Full Screen Mobile Navigation Overlay -->
+<nav class="fixed inset-0 z-50 bg-surface flex flex-col justify-between px-margin-mobile pt-32 pb-16 opacity-0 pointer-events-none transform translate-y-10 scale-95 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] overflow-hidden" id="mobile-overlay">
+    <!-- Overlay Header -->
+    <header class="fixed top-0 left-0 right-0 z-[60] bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 flex justify-between items-center px-margin-mobile py-base h-20">
+        <span class="font-handwritten text-headline-md text-primary" data-translate="heroTitle">Liron Tako</span>
+        <button class="p-2 flex items-center justify-center transition-transform active:scale-95" id="close-nav" aria-label="Close navigation menu">
+            <span class="material-symbols-outlined text-[32px] text-primary">close</span>
+        </button>
+    </header>
+
+    <!-- Main Navigation Links -->
+    <div class="relative z-10 flex flex-col items-center justify-center flex-grow space-y-12">
+        <div class="reveal-animation" style="transition-delay: 100ms;">
+            <a class="nav-link-item relative group block text-center mobile-nav-link" href="#showcase">
+                <span class="font-label-caps text-label-caps text-muted-clay mb-2 block tracking-[0.2em]" data-translate="num01">01</span>
+                <span class="font-display-lg-mobile text-display-lg-mobile text-primary" data-translate="navShowcase">Showcase</span>
+            </a>
+        </div>
+        <div class="reveal-animation" style="transition-delay: 200ms;">
+            <a class="nav-link-item relative group block text-center mobile-nav-link" href="#about">
+                <span class="font-label-caps text-label-caps text-muted-clay mb-2 block tracking-[0.2em]" data-translate="num02">02</span>
+                <span class="font-display-lg-mobile text-display-lg-mobile text-primary" data-translate="navAbout">About</span>
+            </a>
+        </div>
+        <div class="reveal-animation" style="transition-delay: 300ms;">
+            <a class="nav-link-item relative group block text-center mobile-nav-link" href="#contact">
+                <span class="font-label-caps text-label-caps text-muted-clay mb-2 block tracking-[0.2em]" data-translate="num03">03</span>
+                <span class="font-display-lg-mobile text-display-lg-mobile text-primary" data-translate="navContact">Contact</span>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Footer / Social Cluster -->
+    <div class="relative z-10 flex flex-col items-center gap-8 reveal-animation" style="transition-delay: 400ms;">
+        <button class="font-label-caps text-label-caps border border-outline-variant px-6 py-2 hover:bg-ink hover:text-off-white transition-all duration-300 lang-toggle-btn">עברית</button>
+        <div class="flex items-center gap-10">
+            <a class="group flex items-center gap-2 transition-colors hover:text-muted-clay" href="#">
+                <span class="font-label-caps text-label-caps">Facebook</span>
+            </a>
+            <a class="group flex items-center gap-2 transition-colors hover:text-muted-clay" href="#">
+                <span class="font-label-caps text-label-caps">Instagram</span>
+            </a>
+        </div>
+        <p class="font-label-caps text-[10px] text-on-surface-variant opacity-60 tracking-widest" data-translate="copyright">
+            © 2024 Liron Tako. All rights reserved.
+        </p>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="relative w-full h-screen overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <!-- Note: This background image is Google-hosted. Replace with local file path (e.g. 'assets/images/hero.jpg') if downloaded -->
+        <div class="w-full h-[110%] bg-cover bg-center hero-parallax" id="hero-bg" style="background-image: url('assets/images/hero.jpg'); transform: translateY(0);"></div>
+    </div>
+    <div class="absolute inset-0 flex flex-col items-start text-start z-10 px-margin-mobile md:px-margin-desktop bg-ink/20 justify-end pb-24">
+        <div class="fade-in-scroll">
+            <h1 class="font-handwritten text-5xl md:text-[96px] text-off-white mb-4" data-translate="heroTitle">
+                Liron Tako
+            </h1>
+            <p class="font-label-caps text-label-caps text-off-white/90 tracking-[0.3em] uppercase" data-translate="heroSubtitle">
+                Multidisciplinary Artist &amp; Maker
+            </p>
+        </div>
+    </div>
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20">
+        <span class="material-symbols-outlined animate-bounce text-off-white text-3xl">expand_more</span>
+    </div>
+</header>
+
+<!-- Showcase Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap" id="showcase">
+    <!-- Header -->
+    <div class="mb-24 flex flex-col md:flex-row justify-between items-end gap-6 border-b border-outline-variant/30 pb-8 fade-in-scroll">
+        <div>
+            <span class="font-label-caps text-label-caps text-muted-clay mb-2 block tracking-widest" data-translate="selectedWorks">SELECTED WORKS</span>
+            <h2 class="font-headline-md text-headline-md text-primary" data-translate="collectivePortfolio">The Collective Portfolio</h2>
+        </div>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-md" data-translate="portfolioIntro">
+            A curated selection of handmade pieces ranging from traditional crochet to modern 3D printed explorations.
+        </p>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-gallery-gutter">
+        <!-- Item 1: Crochet -->
+        <div class="md:col-span-8 group fade-in-scroll cursor-pointer">
+            <div class="overflow-hidden mb-6 relative shadow-sm transition-all duration-700 group-hover:shadow-2xl group-hover:-translate-y-1">
+                <!-- Replace src with local image path if downloaded -->
+                <img class="w-full h-[600px] object-cover transition-transform duration-1000 group-hover:scale-105" src="assets/images/crochet.jpg" alt="Crochet Amigurumi &amp; Household Detail"/>
+            </div>
+            <div class="flex justify-between items-baseline">
+                <div>
+                    <h3 class="font-headline-sm text-headline-sm text-primary mb-1" data-translate="crochetTitle">Crochet Amigurumi &amp; Household</h3>
+                    <p class="font-label-caps text-label-caps text-on-surface-variant" data-translate="crochetSubtitle">TEXTILE ART • 2024</p>
+                </div>
+                <span class="material-symbols-outlined text-outline group-hover:text-primary transition-all gallery-arrow">north_east</span>
+            </div>
+        </div>
+
+        <!-- Item 2: Candles -->
+        <div class="md:col-span-4 group fade-in-scroll mt-0 md:mt-20 cursor-pointer">
+            <div class="overflow-hidden mb-6 shadow-sm transition-all duration-700 group-hover:shadow-2xl group-hover:-translate-y-1">
+                <!-- Replace src with local image path if downloaded -->
+                <img class="w-full h-[700px] object-cover transition-transform duration-1000 group-hover:scale-105" src="assets/images/candles.jpg" alt="Hand-Carved Sculptural Candles"/>
+            </div>
+            <div class="flex justify-between items-baseline">
+                <div>
+                    <h3 class="font-headline-sm text-headline-sm text-primary mb-1" data-translate="candlesTitle">Hand-Carved Candles</h3>
+                    <p class="font-label-caps text-label-caps text-on-surface-variant" data-translate="candlesSubtitle">SCULPTURAL • UNIQUE</p>
+                </div>
+                <span class="material-symbols-outlined text-outline group-hover:text-primary transition-all gallery-arrow">north_east</span>
+            </div>
+        </div>
+
+        <!-- Item 3: 3D Printed -->
+        <div class="md:col-span-5 group fade-in-scroll cursor-pointer">
+            <div class="overflow-hidden mb-6 shadow-sm transition-all duration-700 group-hover:shadow-2xl group-hover:-translate-y-1">
+                <!-- Replace style background image with local path if downloaded -->
+                <div class="w-full h-[500px] bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" style="background-image: url('assets/images/3d-printed.jpg')"></div>
+            </div>
+            <div class="flex justify-between items-baseline">
+                <div>
+                    <h3 class="font-headline-sm text-headline-sm text-primary mb-1" data-translate="printedTitle">3D Printed Designs</h3>
+                    <p class="font-label-caps text-label-caps text-on-surface-variant" data-translate="printedSubtitle">MODERN • GENRE-BENDING</p>
+                </div>
+                <span class="material-symbols-outlined text-outline group-hover:text-primary transition-all gallery-arrow">north_east</span>
+            </div>
+        </div>
+
+        <!-- Item 4: Jesmonite -->
+        <div class="md:col-span-7 group fade-in-scroll mt-0 md:mt-12 cursor-pointer">
+            <div class="overflow-hidden mb-6 shadow-sm transition-all duration-700 group-hover:shadow-2xl group-hover:-translate-y-1">
+                <!-- Replace style background image with local path if downloaded -->
+                <div class="w-full h-[500px] bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" style="background-image: url('assets/images/jesmonite.jpg')"></div>
+            </div>
+            <div class="flex justify-between items-baseline">
+                <div>
+                    <h3 class="font-headline-sm text-headline-sm text-primary mb-1" data-translate="jesmoniteTitle">Jesmonite &amp; Hand-crafted Molds</h3>
+                    <p class="font-label-caps text-label-caps text-on-surface-variant" data-translate="jesmoniteSubtitle">TACTILE • MATERIAL STUDY</p>
+                </div>
+                <span class="material-symbols-outlined text-outline group-hover:text-primary transition-all gallery-arrow">north_east</span>
+            </div>
+        </div>
+
+        <!-- Item 5: Sculptural Judaica -->
+        <div class="md:col-span-12 group fade-in-scroll py-12 cursor-pointer">
+            <div class="overflow-hidden mb-6 relative shadow-sm transition-all duration-700 group-hover:shadow-2xl group-hover:-translate-y-1">
+                <!-- Replace src with local image path if downloaded -->
+                <img class="w-full h-[800px] object-cover transition-transform duration-1000 group-hover:scale-105" src="assets/images/judaica.jpg" alt="Sculptural Ceramics &amp; Ritual Judaica"/>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between md:items-end gap-6">
+                <div class="max-w-2xl">
+                    <h3 class="font-headline-sm text-headline-sm text-primary mb-1" data-translate="judaicaTitle">Sculptural Judaica</h3>
+                    <p class="font-label-caps text-label-caps text-on-surface-variant mb-4" data-translate="judaicaSubtitle">CERAMICS &amp; RITUAL ART</p>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant" data-translate="judaicaDesc">
+                        Modern interpretations of tradition — handcrafted with organic forms and stone-like textures.
+                    </p>
+                </div>
+                <span class="material-symbols-outlined text-outline group-hover:text-primary transition-all hidden md:block gallery-arrow">north_east</span>
+            </div>
+        </div>
+
+        <!-- Item 6: Gift Baskets -->
+        <div class="md:col-span-12 group fade-in-scroll py-12 cursor-pointer">
+            <div class="overflow-hidden mb-6 shadow-sm transition-all duration-700 group-hover:shadow-2xl group-hover:-translate-y-1">
+                <!-- Replace style background image with local path if downloaded -->
+                <div class="w-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105 h-[600px]" style="background-image: url('assets/images/gift-baskets.jpg');"></div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between md:items-center">
+                <div>
+                    <h3 class="font-headline-sm text-headline-sm text-primary mb-1" data-translate="basketTitle">Custom Gift Baskets</h3>
+                    <p class="font-label-caps text-label-caps text-on-surface-variant" data-translate="basketSubtitle">CURATED • MADE-TO-ORDER</p>
+                </div>
+                <a class="mt-4 md:mt-0 px-8 py-3 bg-ink text-off-white font-label-caps text-label-caps inline-block tracking-widest hover:bg-muted-clay transition-all duration-300 active-scale" href="#contact" data-translate="requestCatalogue">REQUEST CATALOGUE</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Process Section -->
+<section class="py-section-gap bg-surface overflow-hidden">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="mb-12 text-center fade-in-scroll">
+            <span class="font-label-caps text-label-caps text-muted-clay mb-2 block uppercase tracking-widest" data-translate="processTag">The Process</span>
+            <h2 class="font-display-lg text-display-lg text-primary" data-translate="processTitle">The Art of the Process</h2>
+        </div>
+        <div class="relative group fade-in-scroll">
+            <div class="overflow-hidden mb-8 shadow-sm transition-all duration-700 group-hover:shadow-2xl">
+                <!-- Replace src with local image path if downloaded -->
+                <img alt="Artist Process Pouring Jesmonite" class="w-full h-[600px] object-cover transition-transform duration-1000 group-hover:scale-105" src="assets/images/process.jpg"/>
+            </div>
+            <div class="max-w-2xl mx-auto text-center">
+                <p class="font-body-lg text-body-lg text-on-surface-variant italic" data-translate="processCaption">
+                    “A moment of transformation: Hand-pouring liquid Jesmonite into organic forms.”
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Meet Artist Section -->
+<section class="bg-surface-container-low py-section-gap overflow-hidden" id="about">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 items-center gap-20">
+        <!-- Visual -->
+        <div class="relative fade-in-scroll">
+            <div class="w-full aspect-square bg-warm-stone overflow-hidden border-[12px] border-surface shadow-lg transition-all duration-700 hover:shadow-2xl">
+                <!-- Replace src with local image path if downloaded -->
+                <img class="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-1000" src="assets/images/portrait.jpg" alt="Portrait of Liron Tako"/>
+            </div>
+            <div class="absolute -bottom-10 -right-10 w-48 h-48 bg-soft-sage opacity-20 -z-10 rounded-full blur-3xl ltr:-right-10 rtl:-left-10 ltr:right-auto rtl:left-auto"></div>
+        </div>
+        <!-- Bio -->
+        <div class="fade-in-scroll">
+            <span class="font-label-caps text-label-caps text-muted-clay mb-4 block" data-translate="meetArtist">MEET THE ARTIST</span>
+            <h2 class="font-display-lg text-display-lg text-primary mb-8" data-translate="artistName">Liron Tako</h2>
+            <div class="space-y-6 font-body-lg text-body-lg text-on-surface-variant">
+                <p data-translate="artistBio1">
+                    I am a multidisciplinary creator driven by the dialogue between the hand and the machine. My work is an exploration of textures—the softness of wool, the rigidity of 3D-printed plastic, and the organic transformation of melting wax.
+                </p>
+                <p data-translate="artistBio2">
+                    Every piece I create is a personal story, tailored to those who seek art that isn't just seen, but felt. From unique home decor to personalized gift narratives, my mission is to bring a sense of sanctuary into every home.
+                </p>
+                <div class="pt-6">
+                    <a class="border-b-2 border-ink pb-1 font-label-caps text-label-caps text-ink hover:text-muted-clay hover:border-muted-clay transition-all active-scale inline-block" href="#contact" data-translate="readFullStory">READ FULL STORY</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Inquiry Section -->
+<section class="py-section-gap canvas-bg relative min-h-[600px] flex items-center" id="contact">
+    <!-- Contact Form Container -->
+    <div id="contact-form-container" class="max-w-3xl w-full mx-auto px-margin-mobile text-center fade-in-scroll transition-all duration-700 ease-out opacity-100">
+        <span class="font-label-caps text-label-caps text-muted-clay mb-4 block" data-translate="getInTouch">GET IN TOUCH</span>
+        <h2 class="font-display-lg text-display-lg text-primary mb-12" data-translate="inquireCommissions">Inquire for Commissions</h2>
+        
+        <form class="space-y-12 text-start" id="inquiry-form">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="group">
+                    <label class="font-label-caps text-label-caps text-on-surface-variant group-focus-within:text-ink transition-colors" data-translate="labelName">FULL NAME</label>
+                    <input required class="w-full bg-transparent border-t-0 border-x-0 border-b border-ink/20 focus:border-ink focus:ring-0 py-4 font-body-md transition-all outline-none" type="text"/>
+                </div>
+                <div class="group">
+                    <label class="font-label-caps text-label-caps text-on-surface-variant group-focus-within:text-ink transition-colors" data-translate="labelEmail">EMAIL ADDRESS</label>
+                    <input required class="w-full bg-transparent border-t-0 border-x-0 border-b border-ink/20 focus:border-ink focus:ring-0 py-4 font-body-md transition-all outline-none" type="email"/>
+                </div>
+                <div class="group md:col-span-2">
+                    <label class="font-label-caps text-label-caps text-on-surface-variant group-focus-within:text-ink transition-colors" data-translate="labelPhone">PHONE NUMBER</label>
+                    <input class="w-full bg-transparent border-t-0 border-x-0 border-b border-ink/20 focus:border-ink focus:ring-0 py-4 font-body-md transition-all outline-none" type="tel"/>
+                </div>
+            </div>
+            <div class="group">
+                <label class="font-label-caps text-label-caps text-on-surface-variant group-focus-within:text-ink transition-colors" data-translate="labelMessage">MESSAGE</label>
+                <textarea required class="w-full bg-transparent border-t-0 border-x-0 border-b border-ink/20 focus:border-ink focus:ring-0 py-4 font-body-md transition-all outline-none resize-none" rows="4"></textarea>
+            </div>
+            <div class="flex justify-center pt-8">
+                <button class="px-12 py-4 bg-ink text-off-white font-label-caps text-label-caps tracking-[0.2em] hover:bg-muted-clay transition-all duration-300 active-scale" type="submit" data-translate="sendInquiry">
+                    SEND INQUIRY
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Dynamic Success State Container (Hidden by default) -->
+    <div id="contact-success-container" class="max-w-[800px] w-full mx-auto text-center px-margin-mobile transition-all duration-700 ease-out opacity-0 pointer-events-none hidden">
+        <div class="relative mb-16">
+            <div class="absolute -top-12 left-1/2 -translate-x-1/2 w-48 h-48 bg-soft-sage/20 rounded-full blur-3xl opacity-60 transition-transform duration-500 ease-out" id="success-blob"></div>
+            <!-- Done Checkmark Icon -->
+            <div class="relative z-10 inline-flex items-center justify-center w-16 h-16 rounded-full border border-soft-sage/40 mb-10">
+                <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'wght' 200;">done</span>
+            </div>
+            <!-- Message Content -->
+            <div class="space-y-6 px-4">
+                <h2 class="font-display-lg text-display-lg text-primary tracking-tight" data-translate="successTitle">
+                    Thank you for your inquiry.
+                </h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mx-auto leading-relaxed" data-translate="successMsg">
+                    Liron will get back to you shortly. Each message is read with the same care and attention given to a new canvas.
+                </p>
+            </div>
+        </div>
+        <!-- Action Button -->
+        <div class="mt-12">
+            <button id="back-to-showcase-btn" class="inline-flex items-center gap-3 px-10 py-5 bg-ink text-off-white font-label-caps text-label-caps rounded-none hover:bg-on-surface-variant transition-all duration-300 group active-scale">
+                <span data-translate="backToShowcase">Back to Showcase</span>
+                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform rtl:group-hover:-translate-x-1">arrow_forward</span>
+            </button>
+        </div>
+        <!-- Aesthetic signature -->
+        <div class="mt-24 opacity-40">
+            <div class="w-full h-[1px] bg-outline-variant/30 max-w-[120px] mx-auto"></div>
+            <div class="mt-4 font-label-caps text-[10px] uppercase tracking-[0.2em] text-outline" data-translate="sanctuaryOfCraft">Sanctuary of Craft</div>
+        </div>
+    </div>
+</section>
+
+<!-- Contextual Aesthetic Visual (Fixed on success, hidden on small screens) -->
+<aside id="contextual-visual" class="fixed hidden lg:block opacity-0 pointer-events-none transition-all duration-1000 bottom-margin-desktop ltr:right-margin-desktop rtl:left-margin-desktop ltr:right-60px rtl:left-60px z-30">
+    <div class="w-32 h-48 border border-ink/10 relative overflow-hidden shadow-sm">
+        <!-- Replace src with local image path if downloaded -->
+        <img class="w-full h-full object-cover" src="assets/images/clay-texture.jpg" alt="Clay Texture in Studio"/>
+    </div>
+</aside>
+
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-primary-container text-on-surface dark:text-on-primary-fixed border-t border-outline-variant/30 transition-colors">
+    <div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-gallery-gutter max-w-container-max mx-auto gap-base">
+        <div class="font-headline-sm text-headline-sm text-primary" style="font-family: Caveat, cursive;" data-translate="heroTitle">Liron Tako</div>
+        <div class="flex gap-8">
+            <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-muted-clay transition-all active-scale ink-underline relative pb-1" href="#">Facebook</a>
+            <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-muted-clay transition-all active-scale ink-underline relative pb-1" href="#">Instagram</a>
+        </div>
+        <p class="font-body-md text-body-md text-on-surface-variant/70" data-translate="copyright">
+            © 2024 Liron Tako. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+<script>
+    // Language translations dictionary
+    const translations = {
+        en: {
+            navShowcase: "Showcase",
+            navAbout: "About",
+            navContact: "Contact",
+            heroTitle: "Liron Tako",
+            heroSubtitle: "Multidisciplinary Artist & Maker",
+            selectedWorks: "SELECTED WORKS",
+            collectivePortfolio: "The Collective Portfolio",
+            portfolioIntro: "A curated selection of handmade pieces ranging from traditional crochet to modern 3D printed explorations.",
+            crochetTitle: "Crochet Amigurumi & Household",
+            crochetSubtitle: "TEXTILE ART • 2024",
+            candlesTitle: "Hand-Carved Candles",
+            candlesSubtitle: "SCULPTURAL • UNIQUE",
+            printedTitle: "3D Printed Designs",
+            printedSubtitle: "MODERN • GENRE-BENDING",
+            jesmoniteTitle: "Jesmonite & Hand-crafted Molds",
+            jesmoniteSubtitle: "TACTILE • MATERIAL STUDY",
+            judaicaTitle: "Sculptural Judaica",
+            judaicaSubtitle: "CERAMICS & RITUAL ART",
+            judaicaDesc: "Modern interpretations of tradition — handcrafted with organic forms and stone-like textures.",
+            basketTitle: "Custom Gift Baskets",
+            basketSubtitle: "CURATED • MADE-TO-ORDER",
+            requestCatalogue: "REQUEST CATALOGUE",
+            processTag: "The Process",
+            processTitle: "The Art of the Process",
+            processCaption: "“A moment of transformation: Hand-pouring liquid Jesmonite into organic forms.”",
+            meetArtist: "MEET THE ARTIST",
+            artistName: "Liron Tako",
+            artistBio1: "I am a multidisciplinary creator driven by the dialogue between the hand and the machine. My work is an exploration of textures—the softness of wool, the rigidity of 3D-printed plastic, and the organic transformation of melting wax.",
+            artistBio2: "Every piece I create is a personal story, tailored to those who seek art that isn't just seen, but felt. From unique home decor to personalized gift narratives, my mission is to bring a sense of sanctuary into every home.",
+            readFullStory: "READ FULL STORY",
+            getInTouch: "GET IN TOUCH",
+            inquireCommissions: "Inquire for Commissions",
+            labelName: "FULL NAME",
+            labelEmail: "EMAIL ADDRESS",
+            labelPhone: "PHONE NUMBER",
+            labelMessage: "MESSAGE",
+            sendInquiry: "SEND INQUIRY",
+            successTitle: "Thank you for your inquiry.",
+            successMsg: "Liron will get back to you shortly. Each message is read with the same care and attention given to a new canvas.",
+            backToShowcase: "Back to Showcase",
+            sanctuaryOfCraft: "Sanctuary of Craft",
+            copyright: "© 2024 Liron Tako. All rights reserved.",
+            num01: "01",
+            num02: "02",
+            num03: "03"
+        },
+        he: {
+            navShowcase: "גלריה",
+            navAbout: "אודות",
+            navContact: "צור קשר",
+            heroTitle: "לירון טקו",
+            heroSubtitle: "אמנית ויוצרת רב-תחומית",
+            selectedWorks: "עבודות נבחרות",
+            collectivePortfolio: "אסופת יצירות",
+            portfolioIntro: "מבחר יצירות בעבודת יד, החל מקרושה מסורתי ועד לחקירות מודרניות בהדפסת תלת-ממד.",
+            crochetTitle: "קרושה אמיגורומי ומוצרים לבית",
+            crochetSubtitle: "אמנות טקסטיל • 2024",
+            candlesTitle: "נרות מגולפים ביד",
+            candlesSubtitle: "פיסולי • ייחודי",
+            printedTitle: "עיצובים בהדפסת תלת-ממד",
+            printedSubtitle: "מודרני • פורץ גבולות",
+            jesmoniteTitle: "ג'סמונייט ותבניות בעבודת יד",
+            jesmoniteSubtitle: "תחושתי • מחקר חומרים",
+            judaicaTitle: "יודאיקה פיסולית",
+            judaicaSubtitle: "קרמיקה ואמנות טקסית",
+            judaicaDesc: "פרשנות מודרנית למסורת — עבודת יד בצורות אורגניות ומרקמים דמויי אבן.",
+            basketTitle: "סלסלאות שי בהתאמה אישית",
+            basketSubtitle: "אוצרות • בהזמנה מראש",
+            requestCatalogue: "בקשת קטלוג",
+            processTag: "תהליך העבודה",
+            processTitle: "האמנות שבתהליך",
+            processCaption: "״רגע של שינוי: יציקה ידנית של ג'סמונייט נוזלי לצורות אורגניות.״",
+            meetArtist: "הכירו את האמנית",
+            artistName: "לירון טקו",
+            artistBio1: "אני יוצרת רב-תחומית המונעת מהדיאלוג בין היד למכונה. העבודה שלי היא חקירה של מרקמים – הרכות של הצמר, הנוקשות של הפלסטיק המודפס בתלת-ממד, והשינוי האורגני של שעווה נמסה.",
+            artistBio2: "כל יצירה שאני יוצרת היא סיפור אישי, המותאם לאלו המחפשים אמנות שלא רק רואים, אלא מרגישים. מעיצוב הבית הייחודי ועד לנרטיבים של מתנות מותאמות אישית, המטרה שלי היא להביא תחושה של מקלט לכל בית.",
+            readFullStory: "לקריאת הסיפור המלא",
+            getInTouch: "צרו קשר",
+            inquireCommissions: "הזמנות ועבודות בהתאמה אישית",
+            labelName: "שם מלא",
+            labelEmail: "כתובת אימייל",
+            labelPhone: "מספר טלפון",
+            labelMessage: "הודעה",
+            sendInquiry: "שליחת פנייה",
+            successTitle: "תודה על פנייתך.",
+            successMsg: "לירון תחזור אליך בהקדם. כל הודעה נקראת באותה הקפדה ותשומת לב הניתנת לקנבס חדש.",
+            backToShowcase: "חזרה לגלריה",
+            sanctuaryOfCraft: "מקלט של יצירה",
+            copyright: "© 2024 לירון טקו. כל הזכויות שמורות.",
+            num01: "01",
+            num02: "02",
+            num03: "03"
+        }
+    };
+
+    let currentLang = 'en';
+
+    // Toggle and apply translations
+    function setLanguage(lang) {
+        currentLang = lang;
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === 'he' ? 'rtl' : 'ltr';
+        
+        // Flip layout specific classes
+        if (lang === 'he') {
+            document.body.classList.add('rtl-active');
+            // Mirror indicators
+            document.querySelectorAll('.gallery-arrow').forEach(arrow => {
+                arrow.textContent = 'north_west';
+            });
+        } else {
+            document.body.classList.remove('rtl-active');
+            document.querySelectorAll('.gallery-arrow').forEach(arrow => {
+                arrow.textContent = 'north_east';
+            });
+        }
+        
+        // Update texts
+        document.querySelectorAll('[data-translate]').forEach(el => {
+            const key = el.getAttribute('data-translate');
+            if (translations[lang] && translations[lang][key]) {
+                el.textContent = translations[lang][key];
+            }
+        });
+
+        // Update button displays (Show the alternative language choice)
+        document.querySelectorAll('.lang-toggle-btn').forEach(btn => {
+            btn.textContent = lang === 'en' ? 'עברית' : 'English';
+        });
+    }
+
+    // Toggle button listeners
+    document.querySelectorAll('.lang-toggle-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            setLanguage(currentLang === 'en' ? 'he' : 'en');
+        });
+    });
+
+    // Mobile Navigation Controls
+    const openNavBtn = document.getElementById('open-nav');
+    const closeNavBtn = document.getElementById('close-nav');
+    const mobileOverlay = document.getElementById('mobile-overlay');
+    
+    function openMobileNav() {
+        mobileOverlay.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-10', 'scale-95');
+        mobileOverlay.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0', 'scale-100', 'active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileNav() {
+        mobileOverlay.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0', 'scale-100', 'active');
+        mobileOverlay.classList.add('opacity-0', 'pointer-events-none', 'translate-y-10', 'scale-95');
+        document.body.style.overflow = '';
+    }
+
+    openNavBtn.addEventListener('click', openMobileNav);
+    closeNavBtn.addEventListener('click', closeMobileNav);
+    
+    // Close mobile nav when link is clicked
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            closeMobileNav();
+        });
+    });
+
+    // Form Submission & Success State Logic
+    const inquiryForm = document.getElementById('inquiry-form');
+    const formContainer = document.getElementById('contact-form-container');
+    const successContainer = document.getElementById('contact-success-container');
+    const contextualVisual = document.getElementById('contextual-visual');
+    const backBtn = document.getElementById('back-to-showcase-btn');
+
+    inquiryForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // Hide form with transition
+        formContainer.classList.add('opacity-0', 'pointer-events-none');
+        formContainer.classList.remove('opacity-100');
+        
+        setTimeout(() => {
+            formContainer.style.display = 'none';
+            successContainer.style.display = 'block';
+            
+            // Trigger visual overlay (aside image)
+            contextualVisual.classList.remove('opacity-0', 'pointer-events-none');
+            contextualVisual.classList.add('opacity-20');
+            
+            // Show success container with transition
+            setTimeout(() => {
+                successContainer.classList.remove('opacity-0', 'pointer-events-none');
+                successContainer.classList.add('opacity-100');
+            }, 50);
+        }, 700);
+    });
+
+    // Reset form and return to Showcase
+    backBtn.addEventListener('click', () => {
+        // Fade out success container and visual
+        successContainer.classList.add('opacity-0', 'pointer-events-none');
+        successContainer.classList.remove('opacity-100');
+        contextualVisual.classList.add('opacity-0', 'pointer-events-none');
+        contextualVisual.classList.remove('opacity-20');
+        
+        setTimeout(() => {
+            successContainer.style.display = 'none';
+            formContainer.style.display = 'block';
+            inquiryForm.reset();
+            
+            // Show form container
+            setTimeout(() => {
+                formContainer.classList.remove('opacity-0', 'pointer-events-none');
+                formContainer.classList.add('opacity-100');
+                
+                // Scroll smoothly to showcase
+                document.getElementById('showcase').scrollIntoView({ behavior: 'smooth' });
+            }, 50);
+        }, 700);
+    });
+
+    // Interactive mouse parallax on success blob
+    document.addEventListener('mousemove', (e) => {
+        const blob = document.getElementById('success-blob');
+        if(blob && successContainer.style.display !== 'none') {
+            const x = (e.clientX - window.innerWidth / 2) / 30;
+            const y = (e.clientY - window.innerHeight / 2) / 30;
+            blob.style.transform = `translate(calc(-50% + ${x}px), ${y}px)`;
+        }
+    });
+
+    // Scroll Intersection Observer for Entrance Animations
+    const observerOptions = {
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in-scroll').forEach(el => observer.observe(el));
+
+    // Sticky Navigation Background Transition
+    const nav = document.getElementById('top-nav');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            nav.classList.add('nav-scrolled');
+            nav.classList.remove('border-outline-variant/0');
+            nav.classList.add('border-outline-variant/30');
+        } else {
+            nav.classList.remove('nav-scrolled');
+            nav.classList.add('border-outline-variant/0');
+            nav.classList.remove('border-outline-variant/30');
+        }
+    });
+
+    // Hero Parallax Effect
+    const heroBg = document.getElementById('hero-bg');
+    window.addEventListener('scroll', () => {
+        const scrolled = window.scrollY;
+        if (scrolled < window.innerHeight) {
+            heroBg.style.transform = `translateY(${scrolled * 0.15}px)`;
+        }
+    });
+
+    // Smooth Scroll for Nav Links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+</body>
+</html>
