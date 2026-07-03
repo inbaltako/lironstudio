@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 
-<html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Liron Tako | Multidisciplinary Artist &amp; Maker</title>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Liron Tako | Multidisciplinary Artist &amp; Maker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -92,315 +98,389 @@
                         "label-caps": ["Hanken Grotesk"]
                     },
                     "fontSize": {
-                        "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "300"}],
-                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
-                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "400"}],
-                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "300"}],
-                        "button": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500"}],
-                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600"}]
+                        "display-lg-mobile": ["36px", { "lineHeight": "1.2", "fontWeight": "300" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "300" }],
+                        "button": ["14px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600" }]
                     }
                 },
             },
         }
     </script>
-<style>
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+
         .canvas-bg {
             background-color: #faf9f7;
             background-image: radial-gradient(#e5e1da 0.5px, transparent 0.5px);
             background-size: 24px 24px;
         }
+
         .fade-in-scroll {
             opacity: 0;
             transform: translateY(30px);
             transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
         }
+
         .fade-in-scroll.visible {
             opacity: 1;
             transform: translateY(0);
         }
+
         .nav-scrolled {
             background-color: rgba(250, 249, 247, 0.95) !important;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
         }
+
         .active-scale:active {
             transform: scale(0.97);
         }
+
         .hero-parallax {
             will-change: transform;
         }
     </style>
 </head>
+
 <body class="bg-surface text-on-surface font-body-md overflow-x-hidden selection:bg-muted-clay selection:text-white">
-<!-- TopNavBar -->
-<nav class="bg-surface/0 backdrop-blur-md text-primary docked full-width top-0 sticky z-50 border-b border-outline-variant/0 transition-all duration-500 flat no shadows" id="top-nav">
-<div class="flex justify-between items-center w-full px-margin-desktop py-base max-w-container-max mx-auto">
-<div class="font-headline-md text-headline-md tracking-tighter text-primary" style="font-family: Caveat, cursive;">
-            Liron Tako
-        </div>
-<div class="hidden md:flex items-center gap-10">
-<a class="font-label-caps text-label-caps text-primary font-bold border-b-2 border-primary pb-1 transition-all hover:text-muted-clay active-scale" href="#showcase">Showcase</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-all active-scale" href="#about">About</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-all active-scale" href="#contact">Contact</a>
-</div>
-<div class="flex items-center gap-4">
-<button class="font-label-caps text-label-caps hover:text-primary transition-all active-scale">HE/EN</button>
-<button class="md:hidden flex items-center active-scale">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</div>
-</nav>
-<!-- Hero Section -->
-<header class="relative w-full h-screen overflow-hidden">
-<div class="absolute inset-0 z-0">
-<div class="w-full h-[110%] bg-cover bg-center hero-parallax" id="hero-bg" style="background-image: url('../images/hero.jpg'); transform: translateY(0);"></div>
-</div>
-<div class="absolute inset-0 flex flex-col items-start text-start z-10 px-margin-desktop bg-ink/20 justify-end pb-24">
-<div class="fade-in-scroll">
-<h1 class="font-display-lg text-display-lg md:text-[80px] text-off-white mb-4" style="font-family: Caveat, cursive;">
+    <!-- TopNavBar -->
+    <nav class="bg-surface/0 backdrop-blur-md text-primary docked full-width top-0 sticky z-50 border-b border-outline-variant/0 transition-all duration-500 flat no shadows"
+        id="top-nav">
+        <div class="flex justify-between items-center w-full px-margin-desktop py-base max-w-container-max mx-auto">
+            <div class="font-headline-md text-headline-md tracking-tighter text-primary"
+                style="font-family: Caveat, cursive;">
                 Liron Tako
-            </h1>
-<p class="font-label-caps text-label-caps text-off-white/90 tracking-[0.3em] uppercase">
-                Multidisciplinary Artist &amp; Maker
-            </p>
-</div>
-</div>
-<div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20">
-<span class="material-symbols-outlined animate-bounce text-off-white">expand_more</span>
-</div>
-</header>
-<!-- Showcase Section -->
-<section class="max-w-container-max mx-auto px-margin-desktop py-section-gap" id="showcase">
-<div class="mb-24 flex flex-col md:flex-row justify-between items-end gap-6 border-b border-outline-variant/30 pb-8 fade-in-scroll">
-<div>
-<span class="font-label-caps text-label-caps text-muted-clay mb-2 block">SELECTED WORKS</span>
-<h2 class="font-headline-md text-headline-md text-primary">The Collective Portfolio</h2>
-</div>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">
-            A curated selection of handmade pieces ranging from traditional crochet to modern 3D printed explorations.
-        </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-gallery-gutter">
-<!-- Item 1: Crochet -->
-<div class="md:col-span-8 group fade-in-scroll cursor-pointer">
-<div class="overflow-hidden mb-6 relative shadow-sm transition-all duration-700 group-hover:shadow-2xl group-hover:-translate-y-1">
-<img class="w-full h-[600px] object-cover transition-transform duration-1000 group-hover:scale-105" src="../images/crochet.jpg"/>
-</div>
-<div class="flex justify-between items-baseline">
-<div>
-<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Crochet Amigurumi &amp; Household</h3>
-<p class="font-label-caps text-label-caps text-on-surface-variant">TEXTILE ART • 2024</p>
-</div>
-<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all">north_east</span>
-</div>
-</div>
-<!-- Item 2: Candles -->
-<div class="md:col-span-4 group fade-in-scroll mt-20 cursor-pointer">
-<div class="overflow-hidden mb-6 shadow-sm transition-all duration-700 group-hover:shadow-2xl group-hover:-translate-y-1">
-<img class="w-full h-[700px] object-cover transition-transform duration-1000 group-hover:scale-105" src="../images/candles.jpg"/>
-</div>
-<div>
-<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Hand-Carved Candles</h3>
-<p class="font-label-caps text-label-caps text-on-surface-variant">SCULPTURAL • UNIQUE</p>
-</div>
-</div>
-<!-- Item 3: 3D Printed -->
-<div class="md:col-span-5 group fade-in-scroll cursor-pointer">
-<div class="overflow-hidden mb-6 shadow-sm transition-all duration-700 group-hover:shadow-2xl group-hover:-translate-y-1">
-<div class="w-full h-[500px] bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" style="background-image: url('../images/3d-printed.jpg')"></div>
-</div>
-<div>
-<h3 class="font-headline-sm text-headline-sm text-primary mb-1">3D Printed Designs</h3>
-<p class="font-label-caps text-label-caps text-on-surface-variant">MODERN • GENRE-BENDING</p>
-</div>
-</div>
-<!-- Item 4: Jesmonite -->
-<div class="md:col-span-7 group fade-in-scroll mt-12 cursor-pointer">
-<div class="overflow-hidden mb-6 shadow-sm transition-all duration-700 group-hover:shadow-2xl group-hover:-translate-y-1">
-<div class="w-full h-[500px] bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" style="background-image: url('../images/jesmonite.jpg')"></div>
-</div>
-<div>
-<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Jesmonite &amp; Hand-crafted Molds</h3>
-<p class="font-label-caps text-label-caps text-on-surface-variant">TACTILE • MATERIAL STUDY</p>
-</div>
-</div>
-<!-- Item 5: Sculptural Judaica -->
-<div class="md:col-span-12 group fade-in-scroll py-12 cursor-pointer">
-<div class="overflow-hidden mb-6 relative shadow-sm transition-all duration-700 group-hover:shadow-2xl group-hover:-translate-y-1">
-<img class="w-full h-[1000px] object-cover transition-transform duration-1000 group-hover:scale-105" src="../images/judaica.jpg"/>
-</div>
-<div class="flex flex-col md:flex-row justify-between md:items-end gap-6">
-<div class="max-w-2xl">
-<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Sculptural Judaica</h3>
-<p class="font-label-caps text-label-caps text-on-surface-variant mb-4">CERAMICS &amp; RITUAL ART</p>
-<p class="font-body-lg text-body-lg text-on-surface-variant">
-                        Modern interpretations of tradition — handcrafted with organic forms and stone-like textures.
-                    </p>
-</div>
-<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all hidden md:block">north_east</span>
-</div>
-</div>
-<!-- Item 6: Gift Baskets -->
-<div class="md:col-span-12 group fade-in-scroll py-12 cursor-pointer">
-<div class="overflow-hidden mb-6 shadow-sm transition-all duration-700 group-hover:shadow-2xl group-hover:-translate-y-1">
-<div class="w-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105 h-[800px]" style="background-image: url('../images/gift-baskets.jpg');"></div>
-</div>
-<div class="flex flex-col md:flex-row justify-between md:items-center">
-<div>
-<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Custom Gift Baskets</h3>
-<p class="font-label-caps text-label-caps text-on-surface-variant">CURATED • MADE-TO-ORDER</p>
-</div>
-<a class="mt-4 md:mt-0 px-8 py-3 bg-ink text-off-white font-label-caps text-label-caps inline-block tracking-widest hover:bg-muted-clay transition-all duration-300 active-scale" href="#contact">REQUEST CATALOGUE</a>
-</div>
-</div>
-</div>
-</section>
-<!-- About Process Section -->
-<section class="py-section-gap bg-surface overflow-hidden">
-<div class="max-w-container-max mx-auto px-margin-desktop">
-<div class="mb-12 text-center fade-in-scroll">
-<span class="font-label-caps text-label-caps text-muted-clay mb-2 block uppercase tracking-widest">The Process</span>
-<h2 class="font-display-lg text-display-lg text-primary">The Art of the Process</h2>
-</div>
-<div class="relative group fade-in-scroll">
-<div class="overflow-hidden mb-8 shadow-sm transition-all duration-700 group-hover:shadow-2xl">
-<img alt="Process" class="w-full h-[600px] object-cover transition-transform duration-1000 group-hover:scale-105" src="../images/process.jpg"/>
-</div>
-<div class="max-w-2xl mx-auto text-center">
-<p class="font-body-lg text-body-lg text-on-surface-variant italic">
-                    “A moment of transformation: Hand-pouring liquid Jesmonite into organic forms.”
-                </p>
-</div>
-</div>
-</div>
-</section>
-<!-- Meet Artist Section -->
-<section class="bg-surface-container-low py-section-gap overflow-hidden" id="about">
-<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 items-center gap-20">
-<div class="relative fade-in-scroll">
-<div class="w-full aspect-square bg-warm-stone overflow-hidden border-[12px] border-surface shadow-lg transition-all duration-700 hover:shadow-2xl">
-<img class="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-1000" src="../images/portrait.jpg"/>
-</div>
-<div class="absolute -bottom-10 -right-10 w-48 h-48 bg-soft-sage opacity-20 -z-10 rounded-full blur-3xl"></div>
-</div>
-<div class="fade-in-scroll">
-<span class="font-label-caps text-label-caps text-muted-clay mb-4 block">MEET THE ARTIST</span>
-<h2 class="font-display-lg text-display-lg text-primary mb-8">Liron Tako</h2>
-<div class="space-y-6 font-body-lg text-body-lg text-on-surface-variant">
-<p>
-                    I am a multidisciplinary creator driven by the dialogue between the hand and the machine. My work is an exploration of textures—the softness of wool, the rigidity of 3D-printed plastic, and the organic transformation of melting wax.
-                </p>
-<p>
-                    Every piece I create is a personal story, tailored to those who seek art that isn't just seen, but felt. From unique home decor to personalized gift narratives, my mission is to bring a sense of sanctuary into every home.
-                </p>
-<div class="pt-6">
-<a class="border-b-2 border-ink pb-1 font-label-caps text-label-caps text-ink hover:text-muted-clay hover:border-muted-clay transition-all active-scale inline-block" href="#contact">READ FULL STORY</a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Inquiry Section -->
-<section class="py-section-gap canvas-bg" id="contact">
-<div class="max-w-3xl mx-auto px-margin-mobile text-center fade-in-scroll">
-<span class="font-label-caps text-label-caps text-muted-clay mb-4 block">GET IN TOUCH</span>
-<h2 class="font-display-lg text-display-lg text-primary mb-12">Inquire for Commissions</h2>
-<form class="space-y-12 text-start">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<div class="group">
-<label class="font-label-caps text-label-caps text-on-surface-variant group-focus-within:text-ink transition-colors">FULL NAME</label>
-<input class="w-full bg-transparent border-t-0 border-x-0 border-b border-ink/20 focus:border-ink focus:ring-0 py-4 font-body-md transition-all outline-none" type="text"/>
-</div>
-<div class="group">
-<label class="font-label-caps text-label-caps text-on-surface-variant group-focus-within:text-ink transition-colors">EMAIL ADDRESS</label>
-<input class="w-full bg-transparent border-t-0 border-x-0 border-b border-ink/20 focus:border-ink focus:ring-0 py-4 font-body-md transition-all outline-none" type="email"/>
-</div>
-<div class="group">
-<label class="font-label-caps text-label-caps text-on-surface-variant group-focus-within:text-ink transition-colors">PHONE NUMBER</label>
-<input class="w-full bg-transparent border-t-0 border-x-0 border-b border-ink/20 focus:border-ink focus:ring-0 py-4 font-body-md transition-all outline-none" type="tel"/>
-</div>
-</div>
-<div class="group">
-<label class="font-label-caps text-label-caps text-on-surface-variant group-focus-within:text-ink transition-colors">MESSAGE</label>
-<textarea class="w-full bg-transparent border-t-0 border-x-0 border-b border-ink/20 focus:border-ink focus:ring-0 py-4 font-body-md transition-all outline-none resize-none" rows="4"></textarea>
-</div>
-<div class="flex justify-center pt-8">
-<button class="px-12 py-4 bg-ink text-off-white font-label-caps text-label-caps tracking-[0.2em] hover:bg-muted-clay transition-all duration-300 active-scale" type="submit">
-                    SEND INQUIRY
+            </div>
+            <div class="hidden md:flex items-center gap-10">
+                <a class="font-label-caps text-label-caps text-primary font-bold border-b-2 border-primary pb-1 transition-all hover:text-muted-clay active-scale"
+                    href="#showcase">Showcase</a>
+                <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-all active-scale"
+                    href="#about">About</a>
+                <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-all active-scale"
+                    href="#contact">Contact</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <button
+                    class="font-label-caps text-label-caps hover:text-primary transition-all active-scale">HE/EN</button>
+                <button class="md:hidden flex items-center active-scale">
+                    <span class="material-symbols-outlined">menu</span>
                 </button>
-</div>
-</form>
-</div>
-</section>
-<!-- Footer -->
-<footer class="bg-surface-container dark:bg-primary-container text-on-surface dark:text-on-primary-fixed border-t border-outline-variant/30">
-<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-gallery-gutter max-w-container-max mx-auto gap-base">
-<div class="font-headline-sm text-headline-sm text-primary" style="font-family: Caveat, cursive;">Liron Tako</div>
-<div class="flex gap-8">
-<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-muted-clay transition-all active-scale" href="https://www.facebook.com/liron.tako.3/photos" target="_blank" rel="noopener noreferrer">Facebook</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-muted-clay transition-all active-scale" href="https://www.instagram.com/lirtako/" target="_blank" rel="noopener noreferrer">Instagram</a>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant/70">
-            © 2024 Liron Tako. All rights reserved.
-        </p>
-</div>
-</footer>
-<script>
-    // Scroll Intersection Observer for Entrance Animations
-    const observerOptions = {
-        threshold: 0.15,
-        rootMargin: "0px 0px -50px 0px"
-    };
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <header class="relative w-full h-screen overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="w-full h-[110%] bg-cover bg-center hero-parallax" id="hero-bg"
+                style="background-image: url('../images/hero.jpg'); transform: translateY(0);"></div>
+        </div>
+        <div
+            class="absolute inset-0 flex flex-col items-start text-start z-10 px-margin-desktop bg-ink/20 justify-end pb-24">
+            <div class="fade-in-scroll">
+                <h1 class="font-display-lg text-display-lg md:text-[80px] text-off-white mb-4"
+                    style="font-family: Caveat, cursive;">
+                    Liron Tako
+                </h1>
+                <p class="font-label-caps text-label-caps text-off-white/90 tracking-[0.3em] uppercase">
+                    Multidisciplinary Artist &amp; Maker
+                </p>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20">
+            <span class="material-symbols-outlined animate-bounce text-off-white">expand_more</span>
+        </div>
+    </header>
+    <!-- Showcase Section -->
+    <section class="max-w-container-max mx-auto px-margin-desktop py-section-gap" id="showcase">
+        <div
+            class="mb-24 flex flex-col md:flex-row justify-between items-end gap-6 border-b border-outline-variant/30 pb-8 fade-in-scroll">
+            <div>
+                <span class="font-label-caps text-label-caps text-muted-clay mb-2 block">SELECTED WORKS</span>
+                <h2 class="font-headline-md text-headline-md text-primary">The Collective Portfolio</h2>
+            </div>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">
+                A curated selection of handmade pieces ranging from traditional crochet to modern 3D printed
+                explorations.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-gallery-gutter">
+            <!-- Item 1: Crochet -->
+            <div class="md:col-span-8 group fade-in-scroll cursor-pointer">
+                <div
+                    class="overflow-hidden mb-6 relative shadow-sm transition-all duration-700 group-hover:shadow-2xl group-hover:-translate-y-1">
+                    <img class="w-full h-[600px] object-cover transition-transform duration-1000 group-hover:scale-105"
+                        src="../images/crochet.jpg" />
+                </div>
+                <div class="flex justify-between items-baseline">
+                    <div>
+                        <h3 class="font-headline-sm text-headline-sm text-primary mb-1">Crochet Amigurumi &amp;
+                            Household</h3>
+                        <p class="font-label-caps text-label-caps text-on-surface-variant">TEXTILE ART • 2024</p>
+                    </div>
+                    <span
+                        class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all">north_east</span>
+                </div>
+            </div>
+            <!-- Item 2: Candles -->
+            <div class="md:col-span-4 group fade-in-scroll mt-20 cursor-pointer">
+                <div
+                    class="overflow-hidden mb-6 shadow-sm transition-all duration-700 group-hover:shadow-2xl group-hover:-translate-y-1">
+                    <img class="w-full h-[700px] object-cover transition-transform duration-1000 group-hover:scale-105"
+                        src="../images/candles.jpg" />
+                </div>
+                <div>
+                    <h3 class="font-headline-sm text-headline-sm text-primary mb-1">Hand-Carved Candles</h3>
+                    <p class="font-label-caps text-label-caps text-on-surface-variant">SCULPTURAL • UNIQUE</p>
+                </div>
+            </div>
+            <!-- Item 3: 3D Printed -->
+            <div class="md:col-span-5 group fade-in-scroll cursor-pointer">
+                <div
+                    class="overflow-hidden mb-6 shadow-sm transition-all duration-700 group-hover:shadow-2xl group-hover:-translate-y-1">
+                    <div class="w-full h-[500px] bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
+                        style="background-image: url('../images/3d-printed.jpg')"></div>
+                </div>
+                <div>
+                    <h3 class="font-headline-sm text-headline-sm text-primary mb-1">3D Printed Designs</h3>
+                    <p class="font-label-caps text-label-caps text-on-surface-variant">MODERN • GENRE-BENDING</p>
+                </div>
+            </div>
+            <!-- Item 4: Jesmonite -->
+            <div class="md:col-span-7 group fade-in-scroll mt-12 cursor-pointer">
+                <div
+                    class="overflow-hidden mb-6 shadow-sm transition-all duration-700 group-hover:shadow-2xl group-hover:-translate-y-1">
+                    <div class="w-full h-[500px] bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
+                        style="background-image: url('../images/jesmonite.jpg')"></div>
+                </div>
+                <div>
+                    <h3 class="font-headline-sm text-headline-sm text-primary mb-1">Jesmonite &amp; Hand-crafted Molds
+                    </h3>
+                    <p class="font-label-caps text-label-caps text-on-surface-variant">TACTILE • MATERIAL STUDY</p>
+                </div>
+            </div>
+            <!-- Item 5: Sculptural Judaica -->
+            <div class="md:col-span-12 group fade-in-scroll py-12 cursor-pointer">
+                <div
+                    class="overflow-hidden mb-6 relative shadow-sm transition-all duration-700 group-hover:shadow-2xl group-hover:-translate-y-1">
+                    <img class="w-full h-[1000px] object-cover transition-transform duration-1000 group-hover:scale-105"
+                        src="../images/judaica.jpg" />
+                </div>
+                <div class="flex flex-col md:flex-row justify-between md:items-end gap-6">
+                    <div class="max-w-2xl">
+                        <h3 class="font-headline-sm text-headline-sm text-primary mb-1">Sculptural Judaica</h3>
+                        <p class="font-label-caps text-label-caps text-on-surface-variant mb-4">CERAMICS &amp; RITUAL
+                            ART</p>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant">
+                            Modern interpretations of tradition — handcrafted with organic forms and stone-like
+                            textures.
+                        </p>
+                    </div>
+                    <span
+                        class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all hidden md:block">north_east</span>
+                </div>
+            </div>
+            <!-- Item 6: Gift Baskets -->
+            <div class="md:col-span-12 group fade-in-scroll py-12 cursor-pointer">
+                <div
+                    class="overflow-hidden mb-6 shadow-sm transition-all duration-700 group-hover:shadow-2xl group-hover:-translate-y-1">
+                    <div class="w-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105 h-[800px]"
+                        style="background-image: url('../images/gift-baskets.jpg');"></div>
+                </div>
+                <div class="flex flex-col md:flex-row justify-between md:items-center">
+                    <div>
+                        <h3 class="font-headline-sm text-headline-sm text-primary mb-1">Custom Gift Baskets</h3>
+                        <p class="font-label-caps text-label-caps text-on-surface-variant">CURATED • MADE-TO-ORDER</p>
+                    </div>
+                    <a class="mt-4 md:mt-0 px-8 py-3 bg-ink text-off-white font-label-caps text-label-caps inline-block tracking-widest hover:bg-muted-clay transition-all duration-300 active-scale"
+                        href="#contact">REQUEST CATALOGUE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Process Section -->
+    <section class="py-section-gap bg-surface overflow-hidden">
+        <div class="max-w-container-max mx-auto px-margin-desktop">
+            <div class="mb-12 text-center fade-in-scroll">
+                <span class="font-label-caps text-label-caps text-muted-clay mb-2 block uppercase tracking-widest">The
+                    Process</span>
+                <h2 class="font-display-lg text-display-lg text-primary">The Art of the Process</h2>
+            </div>
+            <div class="relative group fade-in-scroll">
+                <div class="overflow-hidden mb-8 shadow-sm transition-all duration-700 group-hover:shadow-2xl">
+                    <img alt="Process"
+                        class="w-full h-[600px] object-cover transition-transform duration-1000 group-hover:scale-105"
+                        src="../images/process.jpg" />
+                </div>
+                <div class="max-w-2xl mx-auto text-center">
+                    <p class="font-body-lg text-body-lg text-on-surface-variant italic">
+                        “A moment of transformation: Hand-pouring liquid Jesmonite into organic forms.”
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Meet Artist Section -->
+    <section class="bg-surface-container-low py-section-gap overflow-hidden" id="about">
+        <div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 items-center gap-20">
+            <div class="relative fade-in-scroll">
+                <div
+                    class="w-full aspect-square bg-warm-stone overflow-hidden border-[12px] border-surface shadow-lg transition-all duration-700 hover:shadow-2xl">
+                    <img class="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-1000"
+                        src="../images/portrait.jpg" />
+                </div>
+                <div
+                    class="absolute -bottom-10 -right-10 w-48 h-48 bg-soft-sage opacity-20 -z-10 rounded-full blur-3xl">
+                </div>
+            </div>
+            <div class="fade-in-scroll">
+                <span class="font-label-caps text-label-caps text-muted-clay mb-4 block">MEET THE ARTIST</span>
+                <h2 class="font-display-lg text-display-lg text-primary mb-8">Liron Tako</h2>
+                <div class="space-y-6 font-body-lg text-body-lg text-on-surface-variant">
+                    <p>
+                        I am a multidisciplinary creator driven by the dialogue between the hand and the machine. My
+                        work is an exploration of textures — the softness of wool, the rigidity of 3D-printed plastic,
+                        and the organic transformation of melting wax.
+                    </p>
+                    <p>
+                        Every piece I create is a personal story, tailored to those who seek art that isn't just seen,
+                        but felt. From unique home decor to personalized gift narratives, my mission is to bring a sense
+                        of sanctuary into every home.
+                    </p>
+                    <div class="pt-6">
+                        <a class="border-b-2 border-ink pb-1 font-label-caps text-label-caps text-ink hover:text-muted-clay hover:border-muted-clay transition-all active-scale inline-block"
+                            href="#contact">READ FULL STORY</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Inquiry Section -->
+    <section class="py-section-gap canvas-bg" id="contact">
+        <div class="max-w-3xl mx-auto px-margin-mobile text-center fade-in-scroll">
+            <span class="font-label-caps text-label-caps text-muted-clay mb-4 block">GET IN TOUCH</span>
+            <h2 class="font-display-lg text-display-lg text-primary mb-12">Inquire for Commissions</h2>
+            <form class="space-y-12 text-start">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="group">
+                        <label
+                            class="font-label-caps text-label-caps text-on-surface-variant group-focus-within:text-ink transition-colors">FULL
+                            NAME</label>
+                        <input
+                            class="w-full bg-transparent border-t-0 border-x-0 border-b border-ink/20 focus:border-ink focus:ring-0 py-4 font-body-md transition-all outline-none"
+                            type="text" />
+                    </div>
+                    <div class="group">
+                        <label
+                            class="font-label-caps text-label-caps text-on-surface-variant group-focus-within:text-ink transition-colors">EMAIL
+                            ADDRESS</label>
+                        <input
+                            class="w-full bg-transparent border-t-0 border-x-0 border-b border-ink/20 focus:border-ink focus:ring-0 py-4 font-body-md transition-all outline-none"
+                            type="email" />
+                    </div>
+                    <div class="group">
+                        <label
+                            class="font-label-caps text-label-caps text-on-surface-variant group-focus-within:text-ink transition-colors">PHONE
+                            NUMBER</label>
+                        <input
+                            class="w-full bg-transparent border-t-0 border-x-0 border-b border-ink/20 focus:border-ink focus:ring-0 py-4 font-body-md transition-all outline-none"
+                            type="tel" />
+                    </div>
+                </div>
+                <div class="group">
+                    <label
+                        class="font-label-caps text-label-caps text-on-surface-variant group-focus-within:text-ink transition-colors">MESSAGE</label>
+                    <textarea
+                        class="w-full bg-transparent border-t-0 border-x-0 border-b border-ink/20 focus:border-ink focus:ring-0 py-4 font-body-md transition-all outline-none resize-none"
+                        rows="4"></textarea>
+                </div>
+                <div class="flex justify-center pt-8">
+                    <button
+                        class="px-12 py-4 bg-ink text-off-white font-label-caps text-label-caps tracking-[0.2em] hover:bg-muted-clay transition-all duration-300 active-scale"
+                        type="submit">
+                        SEND INQUIRY
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer
+        class="bg-surface-container dark:bg-primary-container text-on-surface dark:text-on-primary-fixed border-t border-outline-variant/30">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-gallery-gutter max-w-container-max mx-auto gap-base">
+            <div class="font-headline-sm text-headline-sm text-primary" style="font-family: Caveat, cursive;">Liron Tako
+            </div>
+            <div class="flex gap-8">
+                <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-muted-clay transition-all active-scale"
+                    href="https://www.facebook.com/liron.tako.3/photos" target="_blank"
+                    rel="noopener noreferrer">Facebook</a>
+                <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-muted-clay transition-all active-scale"
+                    href="https://www.instagram.com/lirtako/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant/70">
+                © 2024 Liron Tako. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <script>
+        // Scroll Intersection Observer for Entrance Animations
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: "0px 0px -50px 0px"
+        };
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-scroll').forEach(el => observer.observe(el));
+
+        // Sticky Navigation Background Transition
+        const nav = document.getElementById('top-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                nav.classList.add('nav-scrolled');
+                nav.classList.remove('border-outline-variant/0');
+                nav.classList.add('border-outline-variant/30');
+            } else {
+                nav.classList.remove('nav-scrolled');
+                nav.classList.add('border-outline-variant/0');
+                nav.classList.remove('border-outline-variant/30');
             }
         });
-    }, observerOptions);
 
-    document.querySelectorAll('.fade-in-scroll').forEach(el => observer.observe(el));
-
-    // Sticky Navigation Background Transition
-    const nav = document.getElementById('top-nav');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 100) {
-            nav.classList.add('nav-scrolled');
-            nav.classList.remove('border-outline-variant/0');
-            nav.classList.add('border-outline-variant/30');
-        } else {
-            nav.classList.remove('nav-scrolled');
-            nav.classList.add('border-outline-variant/0');
-            nav.classList.remove('border-outline-variant/30');
-        }
-    });
-
-    // Hero Parallax Effect
-    const heroBg = document.getElementById('hero-bg');
-    window.addEventListener('scroll', () => {
-        const scrolled = window.scrollY;
-        if (scrolled < window.innerHeight) {
-            heroBg.style.transform = `translateY(${scrolled * 0.15}px)`;
-        }
-    });
-
-    // Smooth Scroll for Nav Links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth'
-                });
+        // Hero Parallax Effect
+        const heroBg = document.getElementById('hero-bg');
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            if (scrolled < window.innerHeight) {
+                heroBg.style.transform = `translateY(${scrolled * 0.15}px)`;
             }
         });
-    });
-</script>
-</body></html>
+
+        // Smooth Scroll for Nav Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
